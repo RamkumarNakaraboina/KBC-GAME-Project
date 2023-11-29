@@ -1,0 +1,57 @@
+#KBC Game
+questions=[
+    'Who developed the Python programming language?',
+    'What is the moon mission get success from India 2023',
+    'who is the prime minister of India?'
+]
+answers=[
+    'Guido van Rossum',
+    'Chandhrayanam 3',
+    'Narendra Modi'
+]
+options=[
+    ['Albert',"Ritche",'Guido van rosum','Dennis'],
+    ['Chandhrayanam 1','Chandhrayanam 4','Chandhrayanam 2','Chandhrayanam 3'],
+    ['Narendhra modhi','Donal tump','Jagan','Elon musk']
+]
+def play_game(user_name,questions,anwsers,options):
+    print(f'Hello {user_name.capitalize()}, Welcome to the KBC game')
+    score=0
+    for i in range(len(questions)):
+        correct_questions=questions[i]
+        correct_answers=answers[i]
+        current_questions_options=options[i]
+        print("Question : ",correct_questions)
+        for index, each_option in enumerate(current_questions_options):
+            print(index+1, ") ", each_option, sep="")
+        user_answer_index = int(input("Enter your choice : "))
+        user_answer=current_questions_options[user_answer_index - 1]
+        if user_answer == correct_answers:
+            print("Correct answer")
+            score=score+1
+
+        else:
+            print("Wrong answer")
+            break
+    print("Your final score is : ",score)
+    return user_name, score
+def ViewScores(names_and_scores):
+    for name, score in names_and_scores.items():
+        print(name," has named ",score)
+def KBC(questions,answers,options):
+    names_and_scores = {}
+    while True:
+        print("1.Play\n2.View Scores\n3.Exit")
+        choice=int(input('Enter your choice : '))
+        if choice==1:
+            user_name=input("Enter your name: ")
+            username, score= play_game(user_name,questions,answers,options)
+            names_and_scores[user_name] = score
+        elif choice==2:
+            ViewScores(names_and_scores)
+        elif choice==3:
+            break
+        else:
+            print("Invalid input\nTry again")
+
+KBC(questions,answers,options)
