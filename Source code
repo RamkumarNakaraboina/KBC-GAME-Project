@@ -1,18 +1,18 @@
 #KBC Game
 questions=[
-    'Who developed the Python programming language?',
-    'What is the moon mission get success from India 2023',
-    'who is the prime minister of India?'
+    'Who created Python?',
+    'Python was released publicly in which year?',
+    'In python which keyword is used to start function?'
 ]
 answers=[
     'Guido van Rossum',
-    'Chandhrayanam 3',
-    'Narendra Modi'
+    '1991',
+    'def'
 ]
 options=[
     ['Albert',"Ritche",'Guido van rosum','Dennis'],
-    ['Chandhrayanam 1','Chandhrayanam 4','Chandhrayanam 2','Chandhrayanam 3'],
-    ['Narendhra modhi','Donal tump','Jagan','Elon musk']
+    ['1991','1981','1961','1971'],
+    ['import','def','function','try']
 ]
 def play_game(user_name,questions,anwsers,options):
     print(f'Hello {user_name.capitalize()}, Welcome to the KBC game')
