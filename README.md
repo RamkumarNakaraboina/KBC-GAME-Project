@@ -9,21 +9,21 @@ Welcome to the KBC (Kaun Banega Crorepati) Game. This console-based game is insp
 ### 1. Game Data
 Python
 questions = [
-    'Who developed the Python programming language?',
-    'What is the latest mission success on the moon in India?',
-    'Who is the prime minister of India?'
+    'Who created Python?',
+    'Python was released publicly in which year?',
+    'In python which keyword is used to start function?'
 ]
 
 answers = [
     'Guido van Rossum',
-    'Chandrayaan-3',
-    'Narendra Modi'
+    '1991',
+    'def'
 ]
 
 options = [
     ['Albert', 'Ritchie', 'Guido van Rossum', 'Dennis'],
-    ['Chandrayaan-1', 'Chandrayaan-4', 'Chandrayaan-2', 'Chandrayaan-3'],
-    ['Narendra Modi', 'Donald Trump', 'Jagan', 'Elon Musk']
+    ['1991', '1981', '1961', '1971'],
+    ['import', 'def', 'function', 'try']
 ]
 
 ## 2. Game Functions
