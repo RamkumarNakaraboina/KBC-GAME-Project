@@ -1,5 +1,5 @@
 # KBC-GAME-Project
-KBC (Kaun Banega Crorepati) game using Python.
+KBC (Kaun Banega Crorepati) game using Python
 # KBC Game
 ## Introduction
 Welcome to the KBC (Kaun Banega Crorepati) Game. This console-based game is inspired by the famous Indian television show. Players answer a series of multiple-choice questions to accumulate a score.
